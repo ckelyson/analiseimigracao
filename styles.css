@@ -1,17 +1,16 @@
-body{
- display: flex;
- justify-content: center; 
- align-items: center;
+/* Estilo geral para o corpo */
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f0f0f0;
 }
 
-
-@media only screen and (max-width: 768px){
-   body{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    transform: rotate(90deg);
+/* Para telas de dispositivos móveis */
+@media (max-width: 768px) {
+   body {
+       font-size: 14px; /* Fonte menor para telas pequenas */
+       padding: 10px; /* Adiciona um pouco de espaçamento ao redor */
+       line-height: 1.5; /* Melhora a legibilidade */
    }
 }
