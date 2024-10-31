@@ -1,17 +1,20 @@
-body{
- display: flex;
- justify-content: center; 
- align-items: center;
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f0f0f0;
 }
 
-
-@media only screen and (max-width: 768px){
-   body{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    transform: rotate(90deg);
+@media screen and (orientation: portrait) {
+   body::before {
+       content: "Por favor, gire seu dispositivo para paisagem.";
+       display: block;
+       position: fixed;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       font-size: 24px;
+       color: #333;
    }
 }
+
