@@ -1,16 +1,20 @@
-/* Estilo geral para o corpo */
 body {
-   font-family: Arial, sans-serif;
-   margin: 0;
-   padding: 0;
-   background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
 }
 
-/* Para telas de dispositivos móveis */
-@media (max-width: 768px) {
-   body {
-       font-size: 14px; /* Fonte menor para telas pequenas */
-       padding: 10px; /* Adiciona um pouco de espaçamento ao redor */
-       line-height: 1.5; /* Melhora a legibilidade */
-   }
+@media screen and (orientation: portrait) {
+    body::before {
+        content: "Por favor, gire seu dispositivo para paisagem.";
+        display: block;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        color: #333;
+    }
 }
+
