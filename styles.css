@@ -32,13 +32,15 @@ p {
 
 @media screen and (orientation: portrait) {
    body::before {
-       display: block;
+       display: flex;
+       justify-content: baseline;
        position: fixed;
        top: 50%;
        left: 50%;
        transform: translate(-50%, -50%);
        font-size: 24px;
        color: #333;
+       
    }
 }
 
