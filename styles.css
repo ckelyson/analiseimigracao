@@ -5,18 +5,20 @@ body {
    background-color: #f0f0f0;
 }
 
+/* Estilo para h1 */
 h1 {
-   text-align: center;
-   color: blue;
+   font-family: 'Helvetica', sans-serif; font-size: 3em; font-weight: bold; color: #03065097; text-align: center; margin-top: 20px; margin-bottom: 10px; text-shadow: 2px 2px 4px #34495e
 }
 
+/* Estilo para p */
 p {
-   font-size: 20px;
+   font-family: 'Open Sans', serif; font-size: 1.2em; line-height: 1.8; color: #2c3e50e3; text-align: center; margin-top: 10px; margin-bottom: 20px; padding: 0 15%
 }
+
 
 @media screen and (orientation: portrait) {
    body::before {
-       content: "Por favor, gire seu dispositivo para paisagem.";
+       
        display: block;
        position: fixed;
        top: 50%;
